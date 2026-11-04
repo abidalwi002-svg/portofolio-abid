@@ -58,3 +58,5 @@ function HargaSetelahDiskon(total) {
 console.log(HargaSetelahDiskon(250000));
 console.log(HargaSetelahDiskon(150000));
 console.log(HargaSetelahDiskon(50000));
+
+    

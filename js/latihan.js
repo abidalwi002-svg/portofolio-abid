@@ -1,5 +1,3 @@
-
-
 // Kalkulator nilai rapor di Console
 // 1. Pesan pertama ke Console
 console.log("Halo, saya Andi!");

@@ -6,7 +6,7 @@ const skills = [
   { nama: "Desain poster dengan Canva", level: "Mahir" },
 ];
 skills.push({ nama: "JavaScript", level: "Dasar" });
-
+skills.push({ nama: "Public speaking", level: "Menengah" });
 const daftarSkill = document.querySelector("#daftar-skill");
 const jumlahSkill = document.querySelector("#jumlah-skill");
 
@@ -77,7 +77,7 @@ const proyek = [
   {
     judul: "Portofolio Responsif",
     kategori: "CSS",
-    gambar: "identitas.jpeg ",
+    gambar: "jpeg/portofolio responsif.jpeg",
     alt: "Tangkapan layar portofolio di ponsel dan laptop",
     deskripsi: "Rapi di ponsel, tablet, dan laptop dengan Flexbox.",
   },
@@ -91,7 +91,7 @@ const proyek = [
   {
     judul: "Lima Soal Logika",
     kategori: "JavaScript",
-    gambar: "jadwal bealajar.jpeg",
+    gambar: "jpeg/lima soal logika.jpeg",
     alt: "Tangkapan layar hasil uji lima soal logika",
     deskripsi: "Lima fungsi logika yang masing-masing diuji 3 masukan.",
   },

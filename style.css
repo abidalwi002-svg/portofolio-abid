@@ -274,6 +274,13 @@ footer a {
     font-size: 2.75rem;
   }
 }
+.tombol-tema {
+  padding: 0.5rem 0.9rem;
+  border: 2px solid white;
+  color: white;
+  background-color: transparent;
+  font-size: 0.9rem;
+}
 
 .tombol-filter.aktif {
   background-color: #2563eb;

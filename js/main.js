@@ -51,7 +51,7 @@ if (kotakPesan && hitungKarakter) {
   });
 }
 
-// 4. Daftar proyek dan filter (halaman Proyek)
+// 4. Daftar proyek dan filter (halaman Proyek)y
 const proyek = [
   {
     judul: "Halaman Profil Pertama",

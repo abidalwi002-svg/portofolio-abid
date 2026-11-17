@@ -51,51 +51,8 @@ if (kotakPesan && hitungKarakter) {
   });
 }
 
-// 4. Daftar proyek dan filter (halaman Proyek)y
-const proyek = [
-  {
-    judul: "Halaman Profil Pertama",
-    kategori: "HTML",
-    gambar: "identitas.jpeg",
-    alt: "Tangkapan layar halaman profil M.abid alwi",
-    deskripsi: "Halaman web pertama saya, dibuat dengan HTML dasar.",
-  },
-  {
-    judul: "Form Kontak",
-    kategori: "HTML",
-    gambar: "form kontak.jpeg",
-    alt: "Tangkapan layar form kontak berisi lima isian",
-    deskripsi: "Form dengan label dan validasi bawaan browser.",
-  },
-  {
-    judul: "Tabel Jadwal Belajar",  
-    kategori: "HTML",
-    gambar: "jadwal belajar.jpeg",
-    alt: "Tangkapan layar tabel jadwal belajar mandiri",
-    deskripsi: "Jadwal belajar mingguan dengan thead dan tbody.",
-  },
-  {
-    judul: "Portofolio Responsif",
-    kategori: "CSS",
-    gambar: "jpeg/portofolio responsif.jpeg",
-    alt: "Tangkapan layar portofolio di ponsel dan laptop",
-    deskripsi: "Rapi di ponsel, tablet, dan laptop dengan Flexbox.",
-  },
-  {
-    judul: "Kalkulator Nilai Rapor",
-    kategori: "JavaScript",
-    gambar: "identitas.jpeg",
-    alt: "Tangkapan layar hasil kalkulator nilai di Console",
-    deskripsi: "Rata-rata dan predikat nilai dengan fungsi JavaScript.",
-  },
-  {
-    judul: "Lima Soal Logika",
-    kategori: "JavaScript",
-    gambar: "jpeg/lima soal logika.jpeg",
-    alt: "Tangkapan layar hasil uji lima soal logika",
-    deskripsi: "Lima fungsi logika yang masing-masing diuji 3 masukan.",
-  },
-];
+// 4. Daftar proyek dan filter (halaman Proyek)
+let proyek = [];
 
 const daftarProyek = document.querySelector("#daftar-proyek");
 const jumlahProyek = document.querySelector("#jumlah-proyek");
@@ -137,9 +94,25 @@ function pasangFilter(idTombol, kategori) {
     }
   });
 }
+async function muatProyek() {
+  daftarProyek.innerHTML = "<p>Memuat proyek...</p>";
 
+  try {
+    const response = await fetch("data/proyek.json");
+
+    if (!response.ok) {
+      throw new Error(`status ${response.status}`); 
+    }
+
+    proyek = await response.json();
+    tampilkanProyek(proyek);
+  } catch (error) {
+    daftarProyek.innerHTML = "<p>Gagal memuat proyek. Silakan coba lagi nanti.</p>";
+    console.error("Terjadi kesalahan saat memuat proyek:", error);
+  }
+}
 if (daftarProyek) {
-  tampilkanProyek(proyek);
+  muatProyek();
   pasangFilter("#filter-semua", "Semua");
   pasangFilter("#filter-html", "HTML");
   pasangFilter("#filter-css", "CSS");

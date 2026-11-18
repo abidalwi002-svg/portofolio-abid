@@ -1,0 +1,26 @@
+[
+    {
+        "nama":"HTML",
+        "level":"Menengah"
+    },
+    {
+        "nama":"CSS",
+        "level":"Menengah"
+    },
+    {
+        "nama":"Git dan Git Hub",
+        "level":"Dasar"
+    },
+    {
+        "nama":"Desain poster dengan canva",
+        "level":"Mahir"
+    },
+    {
+        "nama":"Javascript",
+        "level":"Dasar"
+    },
+    {
+        "nama":"Public Speaking",
+        "level":"Menengah"
+    }
+]

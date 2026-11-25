@@ -166,6 +166,11 @@ main {
   margin-bottom: 0;
 }
 
+#daftar-proyek {
+  min-height: 30rem;
+}
+  
+
 article img {
   border-radius: 8px;
   border: 1px solid var(--warna-garis);
@@ -299,3 +304,5 @@ body.gelap {
 --warna-kartu: #1c2836;
 --warna-garis: #34465a;
 }
+
+

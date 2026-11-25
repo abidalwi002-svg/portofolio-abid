@@ -1,7 +1,7 @@
 # Portofolio Abid 
 Website portofolio pribadi yang saya buat di Kelas Industri UBIG (Paket 1, Minggu 01 sampai 09). Versi ini adalah Portofolio v2: tampil rapi di ponsel, tablet, dan laptop, serta interaktif dengan JavaScript.
 ## Tampilan
-![Tampilan beranda portofolio](jpeg/portofolio responsif.jpeg)
+![Tampilan beranda portofolio](jpeg/portofolio-responsif.png)
 ## Tampilan Lighthouse
 ![Tampilan beranda portofolio](jpeg/abidskor.png)
 ## Fitur
@@ -21,4 +21,4 @@ Website portofolio pribadi yang saya buat di Kelas Industri UBIG (Paket 1, Mingg
 - Kontak: Performance 99, Accessibility 100, Best Practices 100, SEO 100
 ## Tautan
 - Website:https://github.com/abidalwi002-svg?tab=repositories
-- Dibuat oleh: Muhammad Abid alwi, SMKN 1 Pasuruan
+- Dibuat oleh: Muhammad Abid, SMKN 1 Pasuruan
